@@ -118,10 +118,11 @@
             unformattedKey);
     }
 
-    private void CreateQRImage(string authenticatorUri)
+    private void CreateQRImage(string _authenticatorUri)
     {
         using var generator = new QRCodeGenerator();
-        var qr = generator.CreateQrCode(authenticatorUri, ECCLevel.H);
+        var qr = generator.CreateQrCode(_authenticatorUri, ECCLevel.H);
+        //var qr = generator.CreateQrCode(authenticatorUri, ECCLevel.H);
 
         var info = new SKImageInfo(300, 300);
         using var surface = SKSurface.Create(info);

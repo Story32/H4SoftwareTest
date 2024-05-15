@@ -1,0 +1,11 @@
+Backlog for projektet
+
+1. Implementer server-side C#.NET webapp.
+2. Implementer høj sikkerhed.
+3. Implementer 2-faktor brugerregistrering.
+4. Implementer 2-faktor login.
+5. Opret brugerdatabase til opbevaring af registrerings- og loginoplysninger.
+6. Implementer krav til stærke passwords under login.
+7. Integrér firmaets SSL-certifikat i applikationen.
+8. Implementer funktionalitet til at oprette en simpel tekstfil på serveren.
+(Implementér QR-scan-kode funktionalitet).

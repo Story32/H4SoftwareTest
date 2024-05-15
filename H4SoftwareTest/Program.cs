@@ -24,10 +24,12 @@ builder.Services.AddAuthentication(options =>
     })
     .AddIdentityCookies();
 
+//Indkommentere for HTTPS
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 
+//In-kommentere til WSL
 //var connectionString = builder.Configuration.GetConnectionString("MockConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 //builder.Services.AddDbContext<ApplicationDbContext>(options =>
 //    options.UseSqlite(connectionString));

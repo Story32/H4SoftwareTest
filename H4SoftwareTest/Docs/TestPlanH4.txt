@@ -1,0 +1,45 @@
+***Test Plan***
+
+Før man går igang: Installere pakken i VS -> Microsoft.EntityFrameworkCore.Sqlite
+
+Script test trin-for-trin:
+
+1. Add migration-knap: Man laver selv en MockDb ved at kører migration. 
+Bemærk: Skift manuelt "max" ud med "500" i migration filen, da det er SQLite,
+fordi SQLite ikke kører 'Max', men derimod 500 (når pkt. 2 og 3 er opfyldt, så kan man kører migration.
+2. Man skal have WSL til at køre, men før dette, skal man have downloaded Ubuntu (se pkt. 3):
+3. Man skal have downloaded Ubuntu. 
+*Hjælp: Hvis din ubuntu ikke kører så følg disse trin: 
+A) Opdatér WSL2 fra nettet fra dette link: https://learn.microsoft.com/en-us/windows/wsl/install-manual
+B) Tjek om du har sat kryds (x) på 'Windows-undersystem til Linux'. Hvis det stadig ikke virker med at 
+downloade ubuntu på dit VS, så gå videre til næste trin:
+C) Derefter genstartet computeren.
+* Tjek om dit virtual visualization er sat op.
+4. Når ovenstående punkter er kørt, så er WSL op og kører. 
+
+
+Hvad betyder compatibility?
+Compatibility: En test som kører både på Windows og Linux. Når man har den og den kører så kalder 
+man det for det at "den matcher". Man skriver det ind i test environment (se dag 2) - så fandt vi ud af 
+at vi også skal have en mock. Hele dette skal stå i test-environment. 
+*Bemærk: For at kører med enten HTTPS eller WSL, så skal man inde i program.cs ind-kommentere koden.
+
+Det vil være godt at have baggrundsviden omkring følgende:
+- Indikator 
+- 2-Type
+
+Test plan (script): 
+1. Opretter bruger
+2. Logger ind 
+3. Får en QR-scan 
+4. Får besked på min APP- 
+5. Godkender med min APP- 
+6. Logget ind. 
+*På denne måde er two-factor gennemført. 
+
+------
+Konkluson på test plan: 
+Det er hermed forklare hvordan man har installeret Linux (Se øverst, hvor jeg har fokrlaret)
+Det vil sige, at nu har man fået ubuntu op og kører. 
+
+
